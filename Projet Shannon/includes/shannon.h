@@ -26,6 +26,7 @@ void clist_add_sommet(clist *l, int news);
 void clist_add_arete(clist *l, int new1, int new2);
 void clist_del_sommet(clist *l, int todel);
 void clist_del_arete(clist *l, int todel1, int todel2);
+void clist_free(clist *l);
 clist *clist_copy(clist *src);
 int is_sommet_in_clist(clist *l, int e);
 int is_arete_in_clist(clist *vulnerable, int a, int b);

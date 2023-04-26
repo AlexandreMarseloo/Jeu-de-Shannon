@@ -190,9 +190,9 @@ int     main()
             return (0);
         if (quit == 1)
         {
-            free(vulnerable);
-            free(current);
-            free(protected);
+            clist_free(vulnerable);
+            clist_free(current);
+            clist_free(protected);
         }
     }
     return (0);

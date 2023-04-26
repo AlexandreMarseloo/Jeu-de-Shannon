@@ -126,6 +126,24 @@ clist   *clist_copy(clist *src)
     return (dst);
 }
 
+void    clist_free(clist *l)
+{
+    if (l == NULL)
+    {
+        free(l);
+        return;
+    }
+    cell *tmp = l->first;
+    cell *next;
+    while (tmp != NULL)
+    {
+        next = tmp->next;
+        free(tmp);
+        tmp = next;
+    }
+    free(l);
+}
+
 int     is_sommet_in_clist(clist *l, int e)
 {
     if (l == NULL)
