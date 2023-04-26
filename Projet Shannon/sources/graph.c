@@ -134,7 +134,7 @@ void    init_graph(clist *sommets, clist *aretes)
     int a = 1, b = 1;
     while (a != 0 || b != 0)
     {
-        printf("\nEntrez deux sommets l'un apres l'autre selon leur numéro associé pour enregistrer l'arete entre ces deux sommets (exemple : 1 puis 2 pour lier A et B) ou entrez deux fois 0 pour finaliser le graph.\n");
+        printf("\nEntrez deux sommets l'un apres l'autre selon leur numero associe pour enregistrer l'arete entre ces deux sommets (exemple : 1 puis 2 pour lier A et B) ou entrez deux fois 0 pour finaliser le graph.\n");
         printf("Sommets : ");
         print_sommets_indexe(sommets);
         printf("Aretes : ");
